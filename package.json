@@ -1,0 +1,41 @@
+{
+  "name": "xrpl-nft-batch-mint",
+  "version": "1.0.0",
+  "description": "Mint an XRPL NFT and create its sell-offer in a single atomic Batch transaction. Runnable TypeScript example + developer field guide.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "mint":             "tsx src/index.ts",
+    "probe":            "tsx scripts/probe-batch-support.ts",
+    "check-amendment":  "tsx scripts/check-amendment.ts",
+    "verify-formula":   "tsx scripts/verify-nftid-formula.ts",
+    "typecheck":        "tsc --noEmit",
+    "build":            "tsc"
+  },
+  "keywords": [
+    "xrpl",
+    "xrp-ledger",
+    "nft",
+    "nftoken",
+    "batch",
+    "batchv1_1",
+    "xls-56",
+    "xls-20",
+    "atomic-transaction",
+    "typescript"
+  ],
+  "author": "XRPDomains",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.0",
+    "xrpl": "^5.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.0"
+  }
+}
